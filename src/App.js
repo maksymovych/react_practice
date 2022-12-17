@@ -1,11 +1,10 @@
 import "./App.css";
+import FetchDogs from "./fetch_dogs/fetch_dogs";
 
 function App() {
-  const dogAPI = "https://dog.ceo/api/breeds/image/random";
-  const [picURL, setPicURL] = React.useState("");
   return (
     <div className="App">
-      <img className="dogImg" src={picURL} alt="randomImgOfDog" />
+      <FetchDogs />
     </div>
   );
 }
